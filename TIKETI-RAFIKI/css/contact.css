@@ -1,0 +1,413 @@
+
+/*--------------- GENERAL STYLE  ---------------------*/
+
+*{ 
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family:"open sans";
+    font-weight: 400; 
+    background-color: antiquewhite; 
+}
+        
+  /* -----------------------HEADER------------------- */
+nav{
+  height: 90px;
+  background-color:white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px 0px 100px;
+  border-top: solid rgb(46, 94, 168);
+}
+nav .logo{
+  margin-top: 35px;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: rgb(216, 38, 52);
+}
+nav ul li a:hover,
+nav ul li a.active
+{
+color: rgb(46, 94, 168);
+}
+nav .menu-btn svg{
+  color:black;
+  font-size: 70px;
+  cursor: pointer;
+  display: none;
+}
+#click {
+  display: none;
+}
+@media  (max-width: 940px){
+  nav .menu-btn svg{
+      display: block;
+  }
+ nav ul{
+  position: fixed;
+  top: 80px;
+  left: -100%;
+  background: white;
+  height: 100vh;
+  width: 100%;
+  display: block;
+  transition: all 0.3s ease;
+}
+#click:checked ~ ul{
+  left: 0%;
+}
+nav ul li{
+  margin: 40px 0;
+  text-align: center;
+}
+}
+.headerr{
+  color:  rgb(46, 94, 168);
+   margin-top: 0px;
+  font-size: 20px;
+  padding: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+   background-color: white;
+ border-bottom: solid rgb(46, 94, 168);
+  border-width: 5px 0px;
+}  
+.header-2{
+  color: white;
+  background-color: rgb(216, 38, 52);
+  padding: 1%;
+  display:flex ;
+}
+.header-2 h3{
+  margin-left: 7%;
+  font-style: italic;
+  margin-right: 14%;
+}
+
+ /* ---------------------MAIN BODY ------------------------ */
+.main-body{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 20px;
+    display: grid;
+    grid: 150px / auto auto auto;
+    grid-gap: 20px;
+    text-align: center;
+}
+.main-body h2{
+  color:rgb(196, 8, 8) ;
+  font-size: 19px;
+}
+.GS, .T, .AT{
+  margin-top: -23px;
+}
+.PR{
+  margin-left: 20px;
+}
+ /* -----------------------FOOTER---------------- */
+.footer
+{
+    text-align: center;
+    background-color: rgb(196, 8, 8);
+    font-size: larger;
+    padding: 1%;
+    color: whitesmoke;
+}
+
+/*--------------- MEDIA QUERRY FOR SIZE 300PX TO 500PX ---------------------*/
+
+@media screen and (max-width: 500px) and (min-width: 300px) {
+
+    *
+    {
+     padding: 0px;
+     margin: 0px;
+     box-sizing: border-box;
+    }
+    .logo img{
+      width: 70%;
+   }
+   .logo{
+      margin-left: -90px;
+   }
+   .headerr{
+      font-size: small;
+      display: flex;
+      flex-direction: column;
+   }
+.header-2 h3{
+  margin-left: 2%;
+  font-style: italic;
+  margin-right: 10%;
+  font-size: x-small;
+}
+.main-body{
+  font-size: 12px;
+  display: grid;
+  grid: 150px / auto auto;
+  grid-gap: 10px;
+  text-align: center;
+}
+.main-body h2{
+   font-size: 15px;
+}
+.social-icon{
+  font-size: 13px;
+}
+.PR h2, .GS h2, .AT h2{
+  font-size: 14px;
+}
+.VP{
+  margin-top: -50px;
+  margin-left: -34px;
+}
+.T{
+  margin-top: 1px;
+  margin-left: -56px;
+}
+.GS{
+  margin-top: -50px;
+  margin-left: 10px;
+}
+.AT{
+  margin-top: 10px;
+  margin-left: -2px;
+}
+.CEO{
+  margin-left: -31px;
+}
+.PH{
+  margin-left: -56px;
+}
+.GD{
+  margin-left: -4px;
+  margin-top: 5px;
+}
+.OL{
+  margin-left: -30px;
+}
+.footer{
+        font-size: xx-small;
+        margin-top: 15%;
+ }
+    
+}
+
+/*--------------- MEDIA QUERRY FOR SIZE 501PX TO 700PX ---------------------*/
+
+@media screen and (max-width: 700px) and (min-width: 501px) {
+
+  *
+  {
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+  }
+  .logo img{
+    width: 100%;
+ }
+ .logo{
+    margin-left: -90px;
+ }
+ .headerr{
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+ }
+.header-2 h3{
+margin-left: 2%;
+font-style: italic;
+margin-right: 10%;
+font-size: small;
+}
+.main-body{
+font-size: 14px;
+display: grid;
+grid: 170px / auto auto;
+grid-gap: 10px;
+text-align: center;
+}
+.main-body h2{
+ font-size: 15px;
+}
+.social-icon{
+font-size: 13px;
+}
+.PR h2, .GS h2, .AT h2{
+font-size: 14px;
+}
+.VP{
+margin-top: -60px;
+margin-left: -34px;
+}
+.T{
+margin-top: 1px;
+margin-left: -56px;
+}
+.GS{
+margin-top: -60px;
+margin-left: 10px;
+}
+.AT{
+margin-top: 10px;
+margin-left: -2px;
+}
+.CEO{
+margin-left: -31px;
+}
+.PH{
+margin-left: -56px;
+}
+.GD{
+margin-left: -4px;
+margin-top: 5px;
+}
+.OL{
+margin-left: -30px;
+}
+  .footer{
+        font-size: small;
+        margin-top: 15%;
+    }
+    
+}
+
+
+ /*--------------- MEDIA QUERRY FOR SIZE 701PX TO 900PX ---------------------*/
+
+ @media screen and (max-width: 900px) and (min-width: 701px) {
+  *
+  {
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+  }
+   .logo img{
+      width: 100%;
+       margin-top: -12px;
+   }
+   .logo{
+      margin-left: -10px;
+   }
+   .headerr{
+      font-size: 13px;
+   }
+.header-2 h3{
+  margin-left: 5%;
+  margin-right: 16%;
+  font-size: 18px;
+}
+.main-body{
+  font-size: 15px;
+  display: grid;
+  grid: 140px / auto auto;
+  grid-gap: 10px;
+  text-align: center;
+  }
+  .main-body h2{
+   font-size: 15px;
+  }
+  .social-icon{
+  font-size: 13px;
+  }
+  .PR h2, .GS h2, .AT h2{
+  font-size: 14px;
+  }
+  .VP{
+  margin-top: -60px;
+  margin-left: -34px;
+  }
+  .T{
+  margin-top: 1px;
+  margin-left: -56px;
+  }
+  .GS{
+  margin-top: -60px;
+  margin-left: 10px;
+  }
+  .AT{
+  margin-top: 10px;
+  margin-left: -2px;
+  }
+  .CEO{
+  margin-left: -31px;
+  }
+  .PH{
+  margin-left: -56px;
+  }
+  .GD{
+  margin-left: -4px;
+  margin-top: 5px;
+  }
+  .OL{
+  margin-left: -30px;
+  }
+    .footer{
+          font-size: medium;
+          margin-top: 15%;
+      }
+}
+
+/*--------------- MEDIA QUERRY FOR SIZE 901PX TO 1200PX ---------------------*/
+
+@media screen and (max-width: 1200px) and (min-width: 901px) {
+  *
+  {
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+  }
+  .logo img{
+    width: 140%; 
+    margin-top: -14px;
+ }
+ .logo{
+    margin-left: -20px;
+   
+ }
+ .headerr{
+    font-size: medium;
+    display: flex;
+ }
+.header-2 h3{
+margin-left: 2%;
+font-style: italic;
+margin-right: 10%;
+font-size: 18px;
+}
+.main-body{
+font-size: 15px;
+display: grid;
+grid: 120px / auto auto auto;
+grid-gap: 14px;
+text-align: center;
+padding: 5%;
+}
+.main-body h2{
+ font-size: 17px;
+}
+      .footer{
+        font-size: medium;
+        margin-top: 15%;
+    }
+  }

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+    <link rel="stylesheet" type="text/css" href="../css/team.css">
+    <!-- ------------STYLE--------- -->
+    <style>
+        .social-icon{
+            color: white;
+            text-decoration: none;
+            transition: 0.2s;
+            margin: 0 10px;
+            width: 5%;
+            height: 25%;
+        }
+
+/* Slideshow container */
+ .slideshow-container {
+  max-width: 800px; 
+   margin-left: 300px;
+  margin-right: 3px; 
+}
+
+@media screen and (max-width: 1200px){
+  .slideshow-container{
+    width: 1000px;
+    margin-left: 110px;
+  margin-right: 60px; 
+  }
+} 
+
+</style>
+</head>
+<body>
+                   <!-- ---------------------- HEADER----------------------- -->
+  <nav>
+    <div class="logo">
+<img src="../images/TKT.png" width="290" height="150" ></div>
+<input type="checkbox" id="click">
+<label for="click" class="menu-btn">
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="20" viewBox="0 0 448 512">
+    <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License 
+        - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 
+        128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 
+        32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+
+<i class="fa fa-bars" aria-hidden="true"></i>
+</label>
+<ul>
+<li> <a href="../index.html">HOME</a> </li>
+<li> <a href="../pages/about.html">ABOUT US</a> </li>
+<li> <a href="../pages/event.html">EVENTS</a> </li>
+<li> <a href="#">OUR TEAM</a> </li>
+<li> <a href="../pages/contact.html">CONTACT US </a> </li>
+</ul></nav>
+<div class="headerr"><h5>CALL US:  +255 700 001 002</h5></br>
+<h5>EMAIL US:  sjutfamily@tiketirafiki.com</h5></br>
+<h5> LOCATION:  St John's University of Tanzania - Dodoma</h5> 
+</div> </div>  
+
+<div class="header-2"><h3>Join with us and be part of the success</h3>
+<a class="social-icon" href="https://instagram.com/tiketirafiki_sjut_family" target="_blank">
+<ion-icon name="logo-instagram"></ion-icon></a>
+<a class="social-icon" href="https://facebook.com/Tiketi Rafiki" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+<a class="social-icon" href="https://twitter.com/@tiketirafiki" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</div>
+
+                         <!-- ---------------------- MAIN BODY----------------------- -->
+<div class="first">
+        <div class="main-body2"><h3>Tiketi Rafiki SJUT Family Football Team.</h3>
+            <p>The Tiketi Rafiki SJUT Family is more than just a group of players, it's a family united by their love for the sport and
+              a commitment to supporting each other. Our team consists of passionate SJUT students who come to together to compete,
+             have fun, and embody the spirit of Tiketi Rafiki.
+            We believe in fair play, teamwork and pushing ourselves to achieve our full potential.
+            </p>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="../images/team1.jpg" style="width:60%">
+            </div>
+            
+            </div>
+            <br>
+            <!-- -------------------JS CODE------------- -->
+            <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            </div>
+
+              <!-- ---------------------- FOOTER----------------------- -->
+               <div class="footer"><h4>copyright &copy; 2024 tiketirafikiSJUTfamily.co.tz. All Rights Reserved.</h4></div>
+              </div>
+              </body>
+</html>

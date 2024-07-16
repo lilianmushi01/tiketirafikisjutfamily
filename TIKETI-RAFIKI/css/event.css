@@ -1,0 +1,650 @@
+
+          
+          
+                  /* -------------GENERAL STYLE-------------- */
+*{ 
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family:"montserrat";
+    background: #f2e7e5;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+               /* -------------------HEADER------------------- */
+nav{
+    height: 120px;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+    border-top: solid rgb(46, 94, 168);
+}
+nav .logo{
+    margin-top: 35px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 30px;
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color:  rgb(216, 38, 52);
+}
+nav ul li a:hover,
+nav ul li a.active
+{
+color: rgb(46, 94, 168);
+}
+nav .menu-btn svg{
+    color:black;
+    font-size: 70px;
+    cursor: pointer;
+    display: none;
+}
+#click {
+    display: none;
+}
+@media  (max-width: 940px){
+    nav .menu-btn svg{
+        display: block;
+    }
+   nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: white;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+#click:checked ~ ul{
+    left: 0%;
+}
+nav ul li{
+    margin: 40px 0;
+    text-align: center;
+}
+}
+.headerr{
+    color:  rgb(46, 94, 168);
+     margin-top: 0px;
+    font-size: 20px;
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+     background-color: white;
+   border-bottom: solid rgb(46, 94, 168);
+    border-width: 5px 0px;
+}  
+.header-2{
+    color: white;
+    background-color:  rgb(216, 38, 52);
+    padding: 1%;
+    display:flex ;
+}
+.header-2 h3{
+    margin-left: 7%;
+    font-style: italic;
+    margin-right: 14%;
+}
+
+
+                 /* ------------------MAIN BODY------------------ */
+.main-body{
+    background-color: white;
+    padding: 3%;
+    margin: 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+} 
+.first{
+    overflow-x: hidden;
+}
+.main-body p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    padding: 5px;
+    text-align: justify;
+}
+.main-body h2{
+    text-align: center;
+    margin-top:0.5% ;
+}
+.main-body2{
+        background-color: rgb(243, 240, 240);
+        padding: 3%;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        margin: 20px;
+}
+.main-body2 p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    padding: 20px;
+    text-align: justify;
+}
+.container-main{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding: 2% 2% 4% 2%;
+}
+
+.main-body2 h2{
+    text-align: center;
+}
+.mySlides1 img{
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-top: 30px;
+    max-width: 400px;
+}
+.mySlides2 img {
+    margin-left: 37px;
+    margin-right: 20px;
+    margin-top: 10px;
+    max-width: 510px; 
+}
+.prev{
+    margin-left: 20px;
+}
+.next{
+    margin-right: 30px;
+}
+
+
+
+
+          /* ---------------FOOTER----------------- */
+.footer
+{
+    text-align: center;
+    color:  whitesmoke;
+    font-size: larger;
+    background-color: rgb(216, 38, 52);
+    padding: 1%;
+}
+
+
+/* 
+
+@media screen and (max-width: 339px) and (min-width: 350px) {
+    *
+    {
+     padding: 0px;
+     margin: 0px;
+     box-sizing: border-box;
+    }
+     .logo img{
+        width: 70%;
+     }
+     .logo{
+        margin-left: -90px;
+     }
+     .headerr{
+        font-size: small;
+        display: flex;
+        flex-direction: column;
+     }
+.header-2 h3{
+    margin-left: 2%;
+    font-style: italic;
+    margin-right: 10%;
+    font-size: x-small;
+}
+.social-icon{
+    font-size: small;
+    margin-top: 2px;
+}
+.container-main{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: -8px;
+}
+.container-main p{
+    font-size: small;
+}
+.main-body p{
+    font-size: 17px;
+}
+.container-main h3{
+    font-size: 14px;
+}
+.main-body{
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.main-body2{
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: -10px;
+}
+.main-body2 p{
+    padding-top: 4px;
+    font-size: 17px;
+}
+.mySlides1 img{
+    margin-left: 28px;
+    margin-right: 10px;
+    margin-top: 5px;
+    max-width: 320px;
+}
+.mySlides2 img {
+    margin-left: 28px;
+    margin-right: 10px;
+    margin-top: 5px;
+    max-width: 320px; 
+}
+.prev{
+    margin-left: 16px;
+}
+.next{
+    margin-right: 18px;
+    
+}
+.footer{
+    font-size: xx-small;
+    background-color: rgb(196, 8, 8);
+    color: white;
+    margin-top: 70px;
+}
+} */
+
+         /* ----------------MEDIA QUERY  SIZE FOR 400PX TO 500PX-------------- */
+
+@media screen and (max-width: 500px) and (min-width: 320px) {
+    *
+    {
+     padding: 0px;
+     margin: 0px;
+     box-sizing: border-box;
+    }
+     .logo img{
+        width: 70%;
+     }
+     .logo{
+        margin-left: -90px;
+     }
+     .headerr{
+        font-size: small;
+        display: flex;
+        flex-direction: column;
+     }
+.header-2 h3{
+    margin-left: 2%;
+    font-style: italic;
+    margin-right: 10%;
+    font-size: x-small;
+}
+.social-icon{
+    font-size: small;
+    margin-top: 2px;
+}
+.container-main{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: -8px;
+}
+.container-main p{
+    font-size: small;
+}
+.main-body p{
+    font-size: 17px;
+}
+.container-main h3{
+    font-size: 14px;
+}
+.main-body{
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.main-body2{
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: -10px;
+}
+.main-body2 p{
+    padding-top: 4px;
+    font-size: 17px;
+}
+.mySlides1 img{
+    margin-left: 28px;
+    margin-right: 10px;
+    margin-top: 5px;
+    max-width: 80%;
+}
+.mySlides2 img {
+    margin-left: 28px;
+    margin-right: 10px;
+    margin-top: 5px;
+    max-width: 80%; 
+}
+.prev{
+    margin-left: 16px;
+}
+.next{
+    margin-right: 10%;
+    
+}
+.footer{
+    font-size: xx-small;
+    background-color: rgb(196, 8, 8);
+    color: white;
+    margin-top: 70px;
+}
+}
+
+
+            /* ----------------MEDIA QUERY  SIZE FOR 501PX TO 700PX-------------- */
+
+@media screen and (max-width: 700px) and (min-width: 501px) {
+    *
+    {
+     padding: 0px;
+     margin: 0px;
+     box-sizing: border-box;
+    }
+     .logo img{
+        width: 100%;
+        margin-top: -9px;
+     }
+     .logo{
+        margin-left: -70px;
+     }
+     .headerr{
+        font-size: small;
+        display: flex;
+        flex-direction: column;
+     }
+.header-2 h3{
+    font-size: small;
+}
+.social-icon{
+    font-size: small;
+    margin-top: 2px;
+}
+.container-main{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: -8px;
+}
+.container-main p{
+    font-size: small;
+}
+.main-body h2{
+    font-size: 20px;
+    text-align: center;
+}
+.main-body p{
+    font-size: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.container-main h3{
+    font-size: 14px;
+}
+.main-body{
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.main-body2{
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: -10px;
+}
+.main-body2 h2{
+padding: 7px;
+font-size: 22px;
+}
+.main-body2 p{
+    font-size: 17px;
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.mySlides1 img{
+    margin-left: 60px;
+    margin-top: 3px;
+    max-width: 310px;
+}
+.mySlides2 img {
+    margin-left: 60px;
+    margin-top: 3px;
+    max-width: 310px; 
+}
+.prev{
+    margin-left: 40px;
+}
+.next{
+    margin-right: 50px;
+}
+.footer{
+    font-size: 15px;
+    background-color: rgb(196, 8, 8);
+    color: whitesmoke;
+}
+}
+
+
+
+           /* ----------------MEDIA QUERY  SIZE FOR 701PX TO 900PX-------------- */
+
+@media screen and (max-width: 900px) and (min-width: 701px) {
+    *
+    {
+     padding: 0px;
+     margin: 0px;
+     box-sizing: border-box;
+    }
+     .logo img{
+        width: 100%;
+        margin-top: -9px;
+     }
+     .logo{
+        margin-left: 4px;
+     }
+     .headerr{
+        font-size: small;
+     }
+.header-2 h3{
+    font-size: 16px;
+}
+.container-main{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    margin: -8px;
+}
+.container-main p{
+    font-size: 16px;
+}
+.main-body p{
+    font-size: 19px;
+    
+}
+.container-main h3{
+    font-size: 20px;
+}
+.main-body{
+    padding: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.main-body2{
+    padding: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: -10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.main-body h2{
+    text-align: center;
+}
+.main-body2 h2{
+padding: 9px;
+font-size: 23px;
+text-align: center;
+}
+.main-body2 p{
+    font-size: 19px;
+    padding-top: 1px;
+}
+.mySlides1 img{
+    margin-left: 100px;
+    margin-top: 3px;
+    max-width: 350px;
+}
+.mySlides2 img {
+    margin-left: 100px;
+    margin-top: 1px;
+    max-width: 350px; 
+}
+.prev{
+    margin-left: 83px;
+}
+.next{
+    margin-right: 63px;
+}
+.footer{
+    font-size: 18px;
+    background-color: rgb(196, 8, 8);
+    color: whitesmoke;
+}
+}
+
+
+           /* ----------------MEDIA QUERY  SIZE FOR 901PX TO 1200PX-------------- */
+
+@media screen and (max-width: 1200px) and (min-width: 901px) {
+    *
+    {
+     padding: 0px;
+     margin: 0px;
+     box-sizing: border-box;
+    }
+     .logo img{
+        width: 120%;
+        margin-top: -9px;
+     }
+     .logo{
+        margin-left: 4px;
+     }
+     .headerr{
+        font-size: medium;
+     }
+.header-2 h3{
+    font-size: 20px;
+    margin-right: 120px;
+}
+.container-main{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    margin: -8px;
+}
+.container-main p{
+    font-size: 18px;
+}
+.main-body p{
+    font-size: 18px;
+}
+.main-body2 p{
+    padding-top: 2px;
+}
+.container-main h2{
+    font-size: 25px;
+}
+.main-body{
+    padding: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.main-body2{
+    padding: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: -10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.main-body2 h2{
+padding: 7px;
+}
+.mySlides1 img{
+    margin-left: 100px;
+    margin-top: 3px;
+    max-width: 380px;
+}
+.mySlides2 img {
+    margin-left: 100px;
+    margin-top: 1px;
+    max-width: 380px; 
+}
+.prev{
+    margin-left: 88px;
+}
+.next{
+    margin-right: 92px;
+}
+.footer{
+    font-size: 20px;
+}
+}
